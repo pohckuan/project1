@@ -7,61 +7,65 @@
   </head>
   <body>
     <h1>Trivia Game</h1>
+
+  <form onsubmit="Submit">
     <div class ="question">
       <h1>1. What is the longest river in the world?</h1>
-      <input type="radio" name="q1" value="a"> Nile </input>
-      <input type="radio" name="q1" value="b"> Amazon River </input>
-      <input type="radio" name="q1" value="c"> Yellow River </input>
-      <input type="radio" name="q1" value="d"> Yangtze </input>
+      <input class ="choice" type="radio" value="a"> Nile </input>
+      <input class ="choice" type="radio" value="b" correct="true"> Amazon River </input>
+      <input class ="choice" type="radio" value="c"> Yellow River </input>
+      <input class ="choice" type="radio" value="d"> Yangtze </input>
     </div>
     <div class ="question">
       <h1>2.What is capital of Australia?</h1>
-      <input type="radio" name="q1" value="a"> Queensland </input>
-      <input type="radio" name="q1" value="b"> Sydney</input>
-      <input type="radio" name="q1" value="c"> Melbourne</input>
-      <input type="radio" name="q1" value="d"> Canberra</input>
+      <input class ="choice" type="radio" value="a"> Queensland </input>
+      <input class ="choice" type="radio" value="b"> Sydney</input>
+      <input class ="choice" type="radio" value="c"> Melbourne</input>
+      <input class ="choice" type="radio" value="d" correct="true"> Canberra</input>
     </div>
 
     <div class ="question">
       <h1>3.  Who was US president during World War 1?</h1>
-      <input type="radio" name="q1" value="a"> Franklin Roosevelt</input>
-      <input type="radio" name="q1" value="b"> Dwight D. Eisenhower</input>
-      <input type="radio" name="q1" value="c"> Harry S. Truman</input>
-      <input type="radio" name="q1" value="d"> Woodrow Wilson</input>
+      <input class ="choice" type="radio" value="a"> Franklin Roosevelt</input>
+      <input class ="choice" type="radio" value="b"> Dwight D. Eisenhower</input>
+      <input class ="choice" type="radio" value="c"> Harry S. Truman</input>
+      <input class ="choice" type="radio" value="d" correct="true"> Woodrow Wilson</input>
     </div>
 
     <div class ="question">
       <h1>4. Which US state is closest to Africa?</h1>
-      <input type="radio" name="q1" value="a"> Maine </input>
-      <input type="radio" name="q1" value="b"> Virginia </input>
-      <input type="radio" name="q1" value="c"> Florida</input>
-      <input type="radio" name="q1" value="d"> Massachusetts </input>
+      <input class ="choice" type="radio" value="a" correct="true"> Maine </input>
+      <input class ="choice" type="radio" value="b"> Virginia </input>
+      <input class ="choice" type="radio" value="c"> Florida</input>
+      <input class ="choice" type="radio" value="d"> Massachusetts </input>
     </div>
 
     <div class ="question">
-      <h1>5. Which name US state capital means “sheltered harbor”?</h1>
-      <input type="radio" name="q1" value="a"> Albany </input>
-      <input type="radio" name="q1" value="b"> Honolulu </input>
-      <input type="radio" name="q1" value="c"> Columbia </input>
-      <input type="radio" name="q1" value="d"> Tallahassee </input>
+      <h1>5. Whichtate capital means “sheltered harbor”?</h1>
+      <input class ="choice" type="radio" value="a"> Albany </input>
+      <input class ="choice" type="radio" value="b" correct="true"> Honolulu </input>
+      <input class ="choice" type="radio" value="c"> Columbia </input>
+      <input class ="choice" type="radio" value="d"> Tallahassee </input>
     </div>
     <div class ="question">
-      <h1>6. What is the name of Mickey Mouse’s pet dog?</h1>
-      <input type="radio" name="q1" value="a"> Pluto</input>
-      <input type="radio" name="q1" value="b"> Goofy </input>
-      <input type="radio" name="q1" value="c"> Butch </input>
-      <input type="radio" name="q1" value="d"> Max </input>
+      <h1>6. What is theickey Mouse’s pet dog?</h1>
+      <input class ="choice" type="radio" value="a" correct="true"> Pluto</input>
+      <input class ="choice" type="radio" value="b"> Goofy </input>
+      <input class ="choice" type="radio" value="c"> Butch </input>
+      <input class ="choice" type="radio" value="d"> Max </input>
     </div>
     <div class ="question">
       <h1>7. What is Philematology?</h1>
-      <input type="radio" name="q1" value="a"> Study of Feces</input>
-      <input type="radio" name="q1" value="b"> Study of Kiss </input>
-      <input type="radio" name="q1" value="c"> Study of Animal Behavior</input>
-      <input type="radio" name="q1" value="d"> Study of Handwriting </input>
+      <input class ="choice" type="radio" value="a"> Study of Feces</input>
+      <input class ="choice" type="radio" value="b" correct="true" > Study of Kiss </input>
+      <input class ="choice" type="radio" value="c"> Study of Animal Behavior</input>
+      <input class ="choice" type="radio" value="d"> Study of Handwriting </input>
+      <button class ="submit">Submit</button>
     </div>
-    <button type="submit">Submit</button>
 
+<button class="next" type="button" name="button">Next</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="script.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   </body>
 </html>
