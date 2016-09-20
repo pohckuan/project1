@@ -1,5 +1,5 @@
 html{
-  background-image: url("http://static6.depositphotos.com/1014680/585/v/950/depositphotos_5859054-Film-background.jpg");
+  background-image: url("http://cdn.wallpapersafari.com/4/43/dQG7hS.jpg");
   background-size: cover;
 }
 
@@ -18,15 +18,15 @@ body{
   /*border: solid black;*/
   border-radius: 40px;
   text-align: left;
-  width: 670px;
+  width: 690px;
   height: 300px;
   margin:auto;
   padding: 100px 50px;
-  bor
+  margin: 0 160px 0 40px;
 }
 
 
-#river{
+/*#river{
 background-image: url("http://www.naturalblaze.com/wp-content/uploads/2016/07/water.jpg");
 background-size: cover;
 color: #000099;
@@ -68,16 +68,16 @@ color: #000099;
 
 #alcapone {
   background-image: url("https://pixabay.com/static/uploads/photo/2015/01/16/20/39/wood-601830_960_720.png");
-  background-size: cover;
+  background-size: contain;
 }
 
 #scurvy {
   background-image: url("http://www.hdwallpapers3d.com/wp-content/uploads/2013/05/sunlight-sun.jpg");
   background-size: cover;
-}
+}*/
 
 .choice {
-text-align: left;
+text-align:right;
 }
 
 .title {
@@ -87,7 +87,7 @@ text-align: left;
 .next {
   width: 100px;
   height: 50px;
-  margin: 50px;
+  margin: 40px;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
   font-size: 30px;
@@ -96,6 +96,6 @@ text-align: left;
 .submit{
   width: 200px;
   height: 100px
-  border: 15px;
+  border: 25px;
   font-size: 30px;
 }
