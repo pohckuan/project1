@@ -21,25 +21,37 @@ function checkAnswer(){
 // get value
 // if value == value in anasery answerArray
 // score ++
+
 $(".question").hide()
 $(".question").eq(0).show()
 $(".next").on("click", goNext);
 function goNext(event){
   event.preventDefault();
-currentQuestionindex++
-if (currentQuestionindex == $(".question").length+1){
-  return
-}
-$(".question").hide()
-$(".question").eq(currentQuestionindex).show();
+  currentQuestionindex++
+  if (currentQuestionindex == $(".question").length+1){
+    return
+  }
+  $(".question").hide()
+  $(".question").eq(currentQuestionindex).show();
 
 
-console.log(currentQuestionindex)
+  console.log(currentQuestionindex)
+  if (currentQuestionindex==9){
+    $(".next").hide();
+    $(".submit").show();
+  }
 }
-$(".next").eq(6).hide();
+
+
+
+$(".submit").hide();
+// $(".submit").eq(0).show();
+// $(".question").eq(currentQuestionindex===10).show();
+
+
 $('.submit').click(function(event) {
   event.preventDefault();
-  alert("you score" + score + "out of " + "7")
+  alert("you score" + score + " out of " + "10")
 });
 
 

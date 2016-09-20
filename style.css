@@ -1,39 +1,42 @@
+html{
+  background-image: url("http://static6.depositphotos.com/1014680/585/v/950/depositphotos_5859054-Film-background.jpg");
+  background-size: cover;
+}
+
 body{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:center;
+  align-items: center;
 
 }
 
 .question{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: solid black;
-  border-radius: 25px;
+  align-items:flex-start;
+  /*border: solid black;*/
+  border-radius: 40px;
   text-align: left;
-  width: 600px;
+  width: 670px;
   height: 300px;
   margin:auto;
   padding: 100px 50px;
-}
-
-input[type="radio"]{
-  vertical-align: middle;
+  bor
 }
 
 
 #river{
-background-image: url("https://media1.britannica.com/eb-media/66/101766-004-D6E47F4B.jpg");
+background-image: url("http://www.naturalblaze.com/wp-content/uploads/2016/07/water.jpg");
 background-size: cover;
-color: #00cd66;
+color: #000099;
 }
 
 #australia {
   background-image: url("http://www.kaaiser.com/map/australian-map.jpg");
   background-size: cover;
   border: none;
+  color: #990099;
 }
 
 #ww1{
@@ -67,6 +70,12 @@ color: #00cd66;
   background-image: url("https://pixabay.com/static/uploads/photo/2015/01/16/20/39/wood-601830_960_720.png");
   background-size: cover;
 }
+
+#scurvy {
+  background-image: url("http://www.hdwallpapers3d.com/wp-content/uploads/2013/05/sunlight-sun.jpg");
+  background-size: cover;
+}
+
 .choice {
 text-align: left;
 }
@@ -81,4 +90,12 @@ text-align: left;
   margin: 50px;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
+  font-size: 30px;
+}
+
+.submit{
+  width: 200px;
+  height: 100px
+  border: 15px;
+  font-size: 30px;
 }
