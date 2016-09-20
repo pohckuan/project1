@@ -36,7 +36,7 @@ $(".question").eq(currentQuestionindex).show();
 
 console.log(currentQuestionindex)
 }
-
+$(".next").eq(6).hide();
 $('.submit').click(function(event) {
   event.preventDefault();
   alert("you score" + score + "out of " + "7")

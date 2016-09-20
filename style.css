@@ -1,49 +1,84 @@
-html {
-  background: black;
-
-
-}
-
 body{
-  margin: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  /*align-items:center;*/
+
 }
 
 .question{
-  margin: 50px 100px 50px 0;
-}
-.body{
-  width:976px;
-  height: 574px;
-  border: white solid 3px;
-}
-
-.answercontent{
-  display: flex;
-  flex-direction:column;
-  align-content: flex-start;
-  margin:50px 100px;
-}
-
-.buttonA, .buttonB, .buttonC, .buttonD{
-  width: 200px;
-  height:100px;
-  margin:0 200px;
-
-}
-
-
-
-
-
-
-.question {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  border: red solid 3px;
-  color: white;
+  justify-content: center;
+  align-items: center;
+  border: solid black;
+  border-radius: 25px;
+  text-align: left;
+  width: 600px;
+  height: 300px;
+  margin:auto;
+  padding: 100px 50px;
+}
 
+input[type="radio"]{
+  vertical-align: middle;
+}
+
+
+#river{
+background-image: url("https://media1.britannica.com/eb-media/66/101766-004-D6E47F4B.jpg");
+background-size: cover;
+color: #00cd66;
+}
+
+#australia {
+  background-image: url("http://www.kaaiser.com/map/australian-map.jpg");
+  background-size: cover;
+  border: none;
+}
+
+#ww1{
+  background-image: url("http://giznet.pl/wp-content/uploads/2013/08/Wanted-by-DonkeyHotey.jpg");
+  background-size: cover;
+}
+
+#africa{
+  background-image: url("http://www.visittanzaniasafaris.com/wp-content/uploads/2012/11/beautiful-sunset-serengeti-park-tanzania-africa-gallery.jpg");
+  background-size: cover;
+  color:white;
+}
+
+#usa{
+  background-image: url("https://img.buzzfeed.com/buzzfeed-static/static/2014-03/enhanced/webdr06/6/16/enhanced-buzz-wide-31778-1394141034-26.jpg");
+  background-size: cover;
+}
+
+#mickey{
+  background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/01/Cute-Mickey-Mouse-Background-for-destop.jpg");
+  background-size: cover;
+  color: #666666;
+}
+
+#study{
+  background-image: url("http://www.spyderonlines.com/images/wallpapers/blackboard-wallpaper/blackboard-wallpaper-24.jpg");
+  background-size: contain;
+}
+
+#alcapone {
+  background-image: url("https://pixabay.com/static/uploads/photo/2015/01/16/20/39/wood-601830_960_720.png");
+  background-size: cover;
+}
+.choice {
+text-align: left;
+}
+
+.title {
+  font-family:"Arial Black", Gadget, sans-serif;
+}
+
+.next {
+  width: 100px;
+  height: 50px;
+  margin: 50px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
