@@ -64,7 +64,7 @@ $(".submit").hide();
 
 $('.submit').click(function(event) {
   event.preventDefault();
-  alert("You score" + score + " out of " + "10")
+  alert("You score" + score + " out of " + "10"+" !")
 });
 
 
