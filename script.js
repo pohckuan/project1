@@ -11,6 +11,18 @@ function checkAnswer(){
     score ++
     console.log(score);
   }
+
+// $(document).ready(function() {
+//   var doUpdate = function() {
+//      $('.timer').each(function() {
+//        var count = parseInt($(this).html());
+//        if (count !== 0) {
+//          $(this).html(count - 1);
+//        }
+//      });
+//    };
+//    setInterval(doUpdate, 1000);
+// });
   // for (i=1 ; i<8; i++){
   //   if (value === answerArray[i])
   //   score ++;
