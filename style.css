@@ -6,6 +6,7 @@ html{
 .title {
   font-family: 'Hoefler Text', 'Baskerville Old Face', Garamond, 'Times New Roman', serif;
   margin:0;
+  color: white;
 }
 body{
   display: flex;
@@ -29,59 +30,14 @@ body{
 }
 
 .ansList {
-  line-height: 30px;
+  line-height: 40px;
   font-weight: bold;
 }
 
-/*#river{
-background-image: url("http://www.naturalblaze.com/wp-content/uploads/2016/07/water.jpg");
-background-size: cover;
-color: #000099;
+a {
+  font-size: 20px;
+  font-weight: bold;
 }
-
-#australia {
-  background-image: url("http://www.kaaiser.com/map/australian-map.jpg");
-  background-size: cover;
-  border: none;
-  color: #990099;
-}
-
-#ww1{
-  background-image: url("http://giznet.pl/wp-content/uploads/2013/08/Wanted-by-DonkeyHotey.jpg");
-  background-size: cover;
-}
-
-#africa{
-  background-image: url("http://www.visittanzaniasafaris.com/wp-content/uploads/2012/11/beautiful-sunset-serengeti-park-tanzania-africa-gallery.jpg");
-  background-size: cover;
-  color:white;
-}
-
-#usa{
-  background-image: url("https://img.buzzfeed.com/buzzfeed-static/static/2014-03/enhanced/webdr06/6/16/enhanced-buzz-wide-31778-1394141034-26.jpg");
-  background-size: cover;
-}
-
-#mickey{
-  background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/01/Cute-Mickey-Mouse-Background-for-destop.jpg");
-  background-size: cover;
-  color: #666666;
-}
-
-#study{
-  background-image: url("http://www.spyderonlines.com/images/wallpapers/blackboard-wallpaper/blackboard-wallpaper-24.jpg");
-  background-size: contain;
-}
-
-#alcapone {
-  background-image: url("https://pixabay.com/static/uploads/photo/2015/01/16/20/39/wood-601830_960_720.png");
-  background-size: contain;
-}
-
-#scurvy {
-  background-image: url("http://www.hdwallpapers3d.com/wp-content/uploads/2013/05/sunlight-sun.jpg");
-  background-size: cover;
-}*/
 
 
 
@@ -102,5 +58,56 @@ color: #000099;
   width: 200px;
   height: 100px
   border: 25px;
-  font-size: 30px;
+  font-size: 20px;
 }
+
+
+/*#river{
+background-image: url("http://www.naturalblaze.com/wp-content/uploads/2016/07/water.jpg");
+background-size: cover;
+color: #000099;
+}
+
+#australia {
+background-image: url("http://www.kaaiser.com/map/australian-map.jpg");
+background-size: cover;
+border: none;
+color: #990099;
+}
+
+#ww1{
+background-image: url("http://giznet.pl/wp-content/uploads/2013/08/Wanted-by-DonkeyHotey.jpg");
+background-size: cover;
+}
+
+#africa{
+background-image: url("http://www.visittanzaniasafaris.com/wp-content/uploads/2012/11/beautiful-sunset-serengeti-park-tanzania-africa-gallery.jpg");
+background-size: cover;
+color:white;
+}
+
+#usa{
+background-image: url("https://img.buzzfeed.com/buzzfeed-static/static/2014-03/enhanced/webdr06/6/16/enhanced-buzz-wide-31778-1394141034-26.jpg");
+background-size: cover;
+}
+
+#mickey{
+background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/01/Cute-Mickey-Mouse-Background-for-destop.jpg");
+background-size: cover;
+color: #666666;
+}
+
+#study{
+background-image: url("http://www.spyderonlines.com/images/wallpapers/blackboard-wallpaper/blackboard-wallpaper-24.jpg");
+background-size: contain;
+}
+
+#alcapone {
+background-image: url("https://pixabay.com/static/uploads/photo/2015/01/16/20/39/wood-601830_960_720.png");
+background-size: contain;
+}
+
+#scurvy {
+background-image: url("http://www.hdwallpapers3d.com/wp-content/uploads/2013/05/sunlight-sun.jpg");
+background-size: cover;
+}*/

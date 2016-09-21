@@ -51,11 +51,12 @@ function goNext(event){
   if (currentQuestionindex==9){
     $(".next").hide();
     $(".submit").show();
+    $(".answer").show();
   }
 }
 
 
-
+$(".answer").hide();
 $(".submit").hide();
 // $(".submit").eq(0).show();
 // $(".question").eq(currentQuestionindex===10).show();
@@ -63,7 +64,7 @@ $(".submit").hide();
 
 $('.submit').click(function(event) {
   event.preventDefault();
-  alert("you score" + score + " out of " + "10")
+  alert("You score" + score + " out of " + "10")
 });
 
 
