@@ -1,116 +1,127 @@
+<!-- NHO: good, semantic markup! Ran code through Atom's Beautify package for formatting -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-      <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <div class="timer"></div>
-    <div class="title">
+<head>
+  <meta charset="utf-8">
+  <!-- NHO: missing title for the page -->
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="timer"></div>
+  <div class="title">
     <h1>How Much Do You Know?</h1>
   </div>
 
-    <div class ="question" id="river">
-      <h1>1. What is the longest river in the world?</h1>
-      <div class="ansList">
-      <input class ="choice" name="q1" type="radio" value="a"> Nile <br>
-      <input class ="choice" name="q1" type="radio" value="b" correct="true"> Amazon River </input><br>
-      <input class ="choice" name="q1" type="radio" value="c"> Yellow River </input><br>
-      <input class ="choice" name="q1" type="radio" value="d"> Yangtze </input><br>
+  <!-- NHO: One thing I'm noticing is that the HTML for each "question" is ultimately very similar...  -->
+  <!-- Thats a good sign that we can use JS to dynamically create these "templates"  -->
+  <div class="question" id="river">
+    <h1>1. What is the longest river in the world?</h1>
+    <div class="ansList">
+      <input class="choice" name="q1" type="radio" value="a"> Nile <br>
+      <!--NHO: correct is a not a valid html attribtue, if you want to fake attributes, need to prefix with 'data-'  -->
+      <input class="choice" name="q1" type="radio" value="b" correct="true"> Amazon River </input><br>
+      <input class="choice" name="q1" type="radio" value="c"> Yellow River </input><br>
+      <input class="choice" name="q1" type="radio" value="d"> Yangtze </input><br>
     </div>
-    </div>
-    <div class ="question" id="australia">
-      <h1>2.What is capital of Australia?</h1>
-      <div class="ansList">
-      <input class ="choice" name="q2" type="radio" value="a"> Queensland </input><br>
-      <input class ="choice" name="q2" type="radio" value="b"> Sydney</input><br>
-      <input class ="choice" name="q2" type="radio" value="c"> Melbourne</input><br>
-      <input class ="choice" name="q2" type="radio" value="d" correct="true"> Canberra</input>
-    </div>
-    </div>
+  </div>
 
-    <div class ="question" id="ww1">
-      <h1>3.  Who was US president during World War 1?</h1>
-      <div class="ansList">
-      <input class ="choice" name="q3" type="radio" value="a"> Franklin Roosevelt</input><br>
-      <input class ="choice" name="q3" type="radio" value="b"> Dwight D. Eisenhower</input><br>
-      <input class ="choice" name="q3" type="radio" value="c"> Harry S. Truman</input><br>
-      <input class ="choice" name="q3" type="radio" value="d" correct="true"> Woodrow Wilson</input>
+  <div class="question" id="australia">
+    <h1>2.What is capital of Australia?</h1>
+    <div class="ansList">
+      <input class="choice" name="q2" type="radio" value="a"> Queensland </input><br>
+      <input class="choice" name="q2" type="radio" value="b"> Sydney</input><br>
+      <input class="choice" name="q2" type="radio" value="c"> Melbourne</input><br>
+      <input class="choice" name="q2" type="radio" value="d" correct="true"> Canberra</input>
     </div>
-    </div>
+  </div>
 
-    <div class ="question" id="africa">
-      <h1>4. Which US state is closest to Africa?</h1>
-      <div class="ansList">
-      <input class ="choice" name="q4" type="radio" value="a" correct="true"> Maine </input><br>
-      <input class ="choice" name="q4" type="radio" value="b"> Virginia </input><br>
-      <input class ="choice" name="q4" type="radio" value="c"> Florida</input><br>
-      <input class ="choice" name="q4" type="radio" value="d"> Massachusetts </input>
+  <div class="question" id="ww1">
+    <h1>3.  Who was US president during World War 1?</h1>
+    <div class="ansList">
+      <input class="choice" name="q3" type="radio" value="a"> Franklin Roosevelt</input><br>
+      <input class="choice" name="q3" type="radio" value="b"> Dwight D. Eisenhower</input><br>
+      <input class="choice" name="q3" type="radio" value="c"> Harry S. Truman</input><br>
+      <input class="choice" name="q3" type="radio" value="d" correct="true"> Woodrow Wilson</input>
     </div>
-    </div>
+  </div>
 
-    <div class ="question" id="usa">
-      <h1>5. Which state's capital means “sheltered harbor”?</h1>
-      <div class="ansList">
-      <input class ="choice" name="q5" type="radio" value="a"> Albany </input><br>
-      <input class ="choice" name="q5" type="radio" value="b" correct="true"> Honolulu </input><br>
-      <input class ="choice" name="q5" type="radio" value="c"> Columbia </input><br>
-      <input class ="choice" name="q5" type="radio" value="d"> Tallahassee </input><br>
+  <div class="question" id="africa">
+    <h1>4. Which US state is closest to Africa?</h1>
+    <div class="ansList">
+      <input class="choice" name="q4" type="radio" value="a" correct="true"> Maine </input><br>
+      <input class="choice" name="q4" type="radio" value="b"> Virginia </input><br>
+      <input class="choice" name="q4" type="radio" value="c"> Florida</input><br>
+      <input class="choice" name="q4" type="radio" value="d"> Massachusetts </input>
     </div>
-    </div>
-    <div class ="question" id="mickey">
-      <h1>6. The first words Mickey Mouse ever spoke in cartoon were:</h1>
-      <div class="ansList">
-      <input class ="choice" name="q6" type="radio" value="a" correct="true"> "Hot dog!"</input><br>
-      <input class ="choice" name="q6" type="radio" value="b">"Pluto!"</input><br>
-      <input class ="choice" name="q6" type="radio" value="c">"Oh no!"</input><br>
-      <input class ="choice" name="q6" type="radio" value="d">"Hamburger!" </input>
-    </div>
-    </div>
-    <div class ="question" id="study">
-      <h1>7. What is Philematology?</h1>
-      <div class="ansList">
-      <input class ="choice" name="q7" type="radio" value="a"> Study of Feces</input><br>
-      <input class ="choice" name="q7" type="radio" value="b" correct="true" > Study of Kiss </input><br>
-      <input class ="choice" name="q7"type="radio" value="c"> Study of Animal Behavior</input><br>
-      <input class ="choice" name="q7" type="radio" value="d"> Study of Handwriting </input><br>
-    </div>
-    </div>
+  </div>
 
-    <div class ="question" id="alcapone">
-      <h1>8. What did Al Capone’s business card say he did for a living?</h1>
-      <div class="ansList">
-      <input class ="choice" name="q8" type="radio" value="a"> Tailor</input><br>
-      <input class ="choice" name="q8" type="radio" value="b"> Bouncer </input><br>
-      <input class ="choice" name="q8" type="radio" value="c"> Shoe Repairman</input><br>
-      <input class ="choice" name="q8" type="radio" value="d" correct="true"> Used Furniture Salesman</input>
+  <div class="question" id="usa">
+    <h1>5. Which state's capital means “sheltered harbor”?</h1>
+    <div class="ansList">
+      <input class="choice" name="q5" type="radio" value="a"> Albany </input><br>
+      <input class="choice" name="q5" type="radio" value="b" correct="true"> Honolulu </input><br>
+      <input class="choice" name="q5" type="radio" value="c"> Columbia </input><br>
+      <input class="choice" name="q5" type="radio" value="d"> Tallahassee </input><br>
     </div>
+  </div>
+
+  <div class="question" id="mickey">
+    <h1>6. The first words Mickey Mouse ever spoke in cartoon were:</h1>
+    <div class="ansList">
+      <input class="choice" name="q6" type="radio" value="a" correct="true"> "Hot dog!"</input><br>
+      <input class="choice" name="q6" type="radio" value="b">"Pluto!"</input><br>
+      <input class="choice" name="q6" type="radio" value="c">"Oh no!"</input><br>
+      <input class="choice" name="q6" type="radio" value="d">"Hamburger!" </input>
     </div>
-    <div class ="question" id="bap">
-      <h1>9. In England, what is a “bap”?</h1>
-      <div class="ansList">
-      <input class ="choice" name="q9" type="radio" value="a"> Bouquet of Flowers</input><br>
-      <input class ="choice" name="q9" type="radio" value="b" correct="true"> Hamburger Bun </input><br>
-      <input class ="choice" name="q9" type="radio" value="c"> Gallon of Water</input><br>
-      <input class ="choice" name="q9" type="radio" value="d"> Banana Peel </input>
+  </div>
+
+  <div class="question" id="study">
+    <h1>7. What is Philematology?</h1>
+    <div class="ansList">
+      <input class="choice" name="q7" type="radio" value="a"> Study of Feces</input><br>
+      <input class="choice" name="q7" type="radio" value="b" correct="true"> Study of Kiss </input><br>
+      <input class="choice" name="q7" type="radio" value="c"> Study of Animal Behavior</input><br>
+      <input class="choice" name="q7" type="radio" value="d"> Study of Handwriting </input><br>
     </div>
+  </div>
+
+  <div class="question" id="alcapone">
+    <h1>8. What did Al Capone’s business card say he did for a living?</h1>
+    <div class="ansList">
+      <input class="choice" name="q8" type="radio" value="a"> Tailor</input><br>
+      <input class="choice" name="q8" type="radio" value="b"> Bouncer </input><br>
+      <input class="choice" name="q8" type="radio" value="c"> Shoe Repairman</input><br>
+      <input class="choice" name="q8" type="radio" value="d" correct="true"> Used Furniture Salesman</input>
     </div>
-    <div class ="question" id="scurvy">
-      <h1>10. Scurvy is the result of a deficiency in which vitamin?</h1>
-      <div class="ansList">
-      <input class ="choice" name="q10" type="radio" value="a"> Vitamin A</input><br>
-      <input class ="choice" name="q10" type="radio" value="b" > Vitamin B </input><br>
-      <input class ="choice" name="q10" type="radio" value="c" correct="true"> Vitamin C</input><br>
-      <input class ="choice" name="q10" type="radio" value="d"> Vitamin D </input>
+  </div>
+
+  <div class="question" id="bap">
+    <h1>9. In England, what is a “bap”?</h1>
+    <div class="ansList">
+      <input class="choice" name="q9" type="radio" value="a"> Bouquet of Flowers</input><br>
+      <input class="choice" name="q9" type="radio" value="b" correct="true"> Hamburger Bun </input><br>
+      <input class="choice" name="q9" type="radio" value="c"> Gallon of Water</input><br>
+      <input class="choice" name="q9" type="radio" value="d"> Banana Peel </input>
+    </div>
+  </div>
+
+  <div class="question" id="scurvy">
+    <h1>10. Scurvy is the result of a deficiency in which vitamin?</h1>
+    <div class="ansList">
+      <input class="choice" name="q10" type="radio" value="a"> Vitamin A</input><br>
+      <input class="choice" name="q10" type="radio" value="b"> Vitamin B </input><br>
+      <input class="choice" name="q10" type="radio" value="c" correct="true"> Vitamin C</input><br>
+      <input class="choice" name="q10" type="radio" value="d"> Vitamin D </input>
     </div>
   </div>
 
   <button class="next" type="button" name="button">Next</button>
-<button class ="submit">Check Your Result!</button>
-<a href="/Users/pohckuan/wdi/projects/answer.html" class="answer">See the Answers!</a>
+  <button class="submit">Check Your Result!</button>
+  <a href="/Users/pohckuan/wdi/projects/answer.html" class="answer">See the Answers!</a>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="script.js"></script>
-  </body>
+</body>
 </html>
